@@ -33,6 +33,17 @@ li {
   padding: 0 15px 10px 35px;
 }
 
+pre {
+  background-color: #f8f8f8;
+  font-size: 13px;
+  line-height: 1.6;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+code {
+}
+
 div a:first-child {
   border-top: 2px solid black;
 }

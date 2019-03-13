@@ -130,10 +130,9 @@
             To get started with writing JavaScript, open the Scratchpad and
             write your first "Hello world" JavaScript code:
           </p>
-          <code
-            >function greetMe(yourName) { alert("Hello " + yourName); }
-            greetMe("World");</code
-          >
+
+          <pre><code>function greetMe(yourName) {<br>  alert("Hello " + yourName); <br>} <br>greetMe("World");</code></pre>
+
           <p>
             Select the code in the pad and hit Ctrl+R to watch it unfold in your
             browser!
@@ -207,7 +206,7 @@
             function (or global context) within which x is declared, not the
             block, which in this case is an if statement.
           </p>
-          <code>if (true) { var x = 5; } console.log(x); // 5</code>
+          <pre><code>if (true) { var x = 5; } console.log(x); // 5</code></pre>
           <p>
             This behavior changes, when using the let declaration introduced in
             ECMAScript 2015.
