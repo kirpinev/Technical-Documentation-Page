@@ -4,11 +4,41 @@
   padding: 0;
 }
 
+#main-doc {
+  padding: 16px;
+}
+
 a {
   text-decoration: none;
-  padding: 10px 10px;
+  padding: 10px 10px 10px 30px;
   color: black;
   border-bottom: 1px solid black;
+}
+
+h2 {
+  padding: 15px 15px 15px 14px;
+}
+
+p,
+li {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+p {
+  padding: 0 15px 15px 30px;
+}
+
+li {
+  padding: 0 15px 10px 35px;
+}
+
+div a:first-child {
+  border-top: 2px solid black;
+}
+
+div a:last-child {
+  border-bottom: 2px solid black;
 }
 
 header h1 {
