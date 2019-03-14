@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <nav id="navbar">
         <header><h1>JS Documentation</h1></header>
         <div class="nav-overflow">
@@ -206,15 +210,12 @@
             function (or global context) within which x is declared, not the
             block, which in this case is an if statement.
           </p>
-          <pre><code>if (true) { var x = 5; } console.log(x); // 5</code></pre>
+          <pre><code>if (true) {<br>  var x = 5; <br>} <br>console.log(x); // 5</code></pre>
           <p>
             This behavior changes, when using the let declaration introduced in
             ECMAScript 2015.
           </p>
-          <code
-            >if (true) { let y = 5; } console.log(y); // ReferenceError: y is
-            not defined</code
-          >
+          <pre><code>if (true) {<br>  let y = 5;<br>}<br>console.log(y);<br>// ReferenceError: y is not defined</code></pre>
         </article>
       </section>
 
@@ -259,11 +260,7 @@
             You cannot declare a constant with the same name as a function or
             variable in the same scope. For example:
           </p>
-          <code
-            >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
-            WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
-            //statements }</code
-          >
+          <pre><code>// THIS WILL CAUSE AN ERROR<br>function f() {};<br>const f = 5;<br>// THIS WILL CAUSE AN ERROR ALSO<br>function f() {<br>  const g = 5;<br>  var g;<br>  //statements <br>}</code></pre>
           <p>
             However, object attributes are not protected, so the following
             statement is executed without problems.
@@ -312,7 +309,7 @@
             is true. Use the optional else clause to execute a statement if the
             condition is false. An if statement looks as follows:
           </p>
-          <code>if (condition) { statement_1; } else { statement_2; }</code>
+          <pre><code>if (condition) {<br />  statement_1;<br>} else {<br>  statement_2; <br>}</code></pre>
           <p>
             condition can be any expression that evaluates to true or false. See
             Boolean for an explanation of what evaluates to true and false. If
@@ -324,11 +321,7 @@
             You may also compound the statements using else if to have multiple
             conditions tested in sequence, as follows:
           </p>
-          <code
-            >if (condition_1) { statement_1; } else if (condition_2) {
-            statement_2; } else if (condition_n) { statement_n; } else {
-            statement_last; }
-          </code>
+          <pre><code>if (condition_1) {<br>  statement_1; <br>} else if (condition_2) {<br>  statement_2;<br>} else if (condition_n) {<br>  statement_n;<br>} else {<br>  statement_last;<br>}</code></pre>
           <p>
             In the case of multiple conditions only the first logical condition
             which evaluates to true will be executed. To execute multiple
@@ -336,25 +329,20 @@
             general, it's good practice to always use block statements,
             especially when nesting if statements:
           </p>
-          <code
-            >if (condition) { statement_1_runs_if_condition_is_true;
-            statement_2_runs_if_condition_is_true; } else {
-            statement_3_runs_if_condition_is_false;
-            statement_4_runs_if_condition_is_false; }</code
-          >
+          <pre><code>if (condition) {<br>  statement_1_runs_if_condition_is_true;<br>  statement_2_runs_if_condition_is_true;<br>} else {<br>  statement_3_runs_if_condition_is_false;<br>  statement_4_runs_if_condition_is_false;<br>}</code></pre>
           <p>
             It is advisable to not use simple assignments in a conditional
             expression, because the assignment can be confused with equality
             when glancing over the code. For example, do not use the following
             code:
           </p>
-          <code>if (x = y) { /* statements here */ }</code>
+          <pre><code>if (x = y) {<br>  /* statements here */<br>}</code></pre>
           <p>
             If you need to use an assignment in a conditional expression, a
             common practice is to put additional parentheses around the
             assignment. For example:
           </p>
-          <code>if ((x = y)) { /* statements here */ }</code>
+          <pre><code>if ((x = y)) {<br>  /* statements here */<br>}</code></pre>
         </article>
       </section>
 
@@ -365,7 +353,7 @@
             A while statement executes its statements as long as a specified
             condition evaluates to true. A while statement looks as follows:
           </p>
-          <code>while (condition) statement</code>
+          <pre><code>while (condition)<br>  statement</code></pre>
           <p>
             If the condition becomes false, statement within the loop stops
             executing and control passes to the statement following the loop.
@@ -384,7 +372,7 @@
             Example: The following while loop iterates as long as n is less than
             three:
           </p>
-          <code>var n = 0; var x = 0; while (n < 3) { n++; x += n; }</code>
+          <pre><code>var n = 0;<br>var x = 0;<br>while (n < 3) {<br>  n++; x += n;<br>}</code></pre>
           <p>
             With each iteration, the loop increments n and adds that value to x.
             Therefore, x and n take on the following values:
@@ -419,7 +407,7 @@
             For example, the following code defines a simple function named
             square:
           </p>
-          <code>function square(number) { return number * number; }</code>
+          <pre><code>function square(number) {<br>  return number * number;<br>}</code></pre>
           <p>
             The function square takes one argument, called number. The function
             consists of one statement that says to return the argument of the
