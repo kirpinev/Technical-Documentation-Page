@@ -24,13 +24,28 @@ a {
   color: black;
 }
 
+div a:first-child {
+  border-top: 1px solid #23282e;
+}
+
+h1 {
+  font-size: 29px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 28px;
+  margin-top: 28px;
+}
+
 h2 {
+  color: #23282e;
   font-weight: 500;
   padding: 15px 15px 15px 14px;
+  margin-top: 30px;
 }
 
 p,
 li {
+  color: #2e353d;
   font-weight: 300;
   font-size: 15px;
   line-height: 1.6;
@@ -40,8 +55,12 @@ p {
   padding: 0 15px 15px 30px;
 }
 
+ul {
+  padding: 0 15px 15px 60px;
+}
+
 li {
-  padding: 0 15px 10px 35px;
+  list-style-type: disc;
 }
 
 code {
@@ -51,26 +70,6 @@ code {
   line-height: 2;
   padding: 15px;
   margin-bottom: 15px;
-}
-
-div a:first-child {
-  border-top: 1px solid #23282e;
-}
-
-/* div a:last-child {
-  border-bottom: 2px solid black;
-} */
-
-header h1 {
-  font-size: 29px;
-  text-align: center;
-  font-weight: 500;
-  margin-bottom: 28px;
-  margin-top: 28px;
-}
-
-li {
-  list-style-type: circle;
 }
 
 .nav-link {
@@ -118,11 +117,7 @@ li {
     border-bottom: none;
   }
 
-  /* div a:first-child {
-    border-top: 1px solid black;
-  } */
-
-  main {
+  #main-doc {
     margin-left: 320px;
   }
 }
