@@ -59,7 +59,7 @@ ul {
   padding: 0 15px 15px 60px;
 }
 
-li {
+ul li {
   list-style-type: disc;
 }
 
