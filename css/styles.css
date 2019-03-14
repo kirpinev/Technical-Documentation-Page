@@ -62,7 +62,7 @@ div a:first-child {
 } */
 
 header h1 {
-  font-size: 30px;
+  font-size: 29px;
   text-align: center;
   font-weight: 500;
   margin-bottom: 28px;
@@ -84,7 +84,8 @@ li {
 
 .nav-link:hover {
   background-color: #4f5b69;
-  border-left: 2px solid #d19b3d;
+  border-left: 3px solid #d19b3d;
+  padding-left: 27px;
 }
 
 .nav-overflow {
